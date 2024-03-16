@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './Components/Navbar/Navbar';
 import LandingPage from './Components/Landing_Page/LandingPage';
+import SignUp from './Components/SignUp/SignUp';
+import Login from './Components/Login/Login';
 function App() {
   return (
     <div className="App">
@@ -9,6 +11,8 @@ function App() {
           <Navbar/>
               <Routes>
               <Route path="/" element={<LandingPage/>}/>
+              <Route path="/SignUp" element={<SignUp/>}/>
+              <Route path="/Login" element={<Login/>}/>
               </Routes>
             
         </BrowserRouter>

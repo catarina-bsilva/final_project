@@ -1,5 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Navbar.css'
+import SignUp from '../SignUp/SignUp'
+import Login from '../Login/Login'
 const Navbar = () => {
   return (
     <div>
@@ -18,18 +21,18 @@ const Navbar = () => {
             <a href="../Landing_Page/LandingPage.html">Home</a>
           </li>
           <li className="link">
-            <a href="#">Appointments</a>
+            <a href="https://www.google.com/">Appointments</a>
           </li>
-              <li className="link">
-                <a href="../Sign_Up//Sign_Up.html">
-                  <button className="btn1">Sign Up</button>
-                </a>
-              </li>
-              <li className="link">
-                <a href="../Login/Login.html">
-                  <button className="btn1">Login</button>
-                </a>
-              </li>
+          <li className="link">
+  <Link to="/SignUp">
+    <button className="btn1">Sign Up</button>
+  </Link>
+</li>
+<li className="link">
+  <Link to="/Login">
+    <button className="btn1">Login</button>
+  </Link>
+</li>
         </ul>
       </nav>
     </div>
