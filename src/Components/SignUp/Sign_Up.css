@@ -90,9 +90,13 @@
   .btn-primary {
     background-color: #007bff;
     color: #fff;
+    width: 40%;
+    display: block;
   }
   
   .btn-danger {
     background-color: #dc3545;
     color: #fff;
+    width: 40%;
+    display: block;
   }
